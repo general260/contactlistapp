@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <title>My ContactList</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <form class="form-inline my-2 my-sm-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Find Contact..">
+          </form>
+        <h3 class="display-4 text-right">
+            <i class="fas fa-book-open text-danger"></i> My<span class="text-danger">Contact</span>List
+        </h3>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name<span class="text-danger">*</span></label>
+                <input type="text" id="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="number">Phone Number#<span class="text-danger">*</span></label>
+                <input type="text" id="number" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="location">Location<span class="text-danger">*</span></label>
+                <input type="text" id="location" class="form-control">
+            </div>
+            <input type="submit" value="Add Contact" class="btn btn-primary btn-block">
+        </form>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone Number#</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody id="contact-list"></tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
